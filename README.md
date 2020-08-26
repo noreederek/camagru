@@ -5,12 +5,14 @@ Camagru - Snapchat like web-app
 
 Before Run should be installed mySQL and PHP mysql PDO Driver
 
-php setup.php
+// php setup.php
 
-php -S localhost:8000
+// php -S localhost:8000
 
-# In camagrudocker folder we have a Docker-compose config (but mailing functions not working without setups sendmail SMTP confs
+# Docker-compose
 
-Go to camagrudocker
+In camagrudocker folder we have a Docker-compose config (but mailing functions not working without setups sendmail SMTP confs
 
-docker-compose up
+* Go to camagrudocker
+
+// docker-compose up
