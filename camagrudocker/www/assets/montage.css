@@ -1,0 +1,86 @@
+#camera-and-filters{
+	display: flex;
+	justify-content: space-around;
+}
+
+video{
+	width:100%;
+	height:auto;
+	position:absolute;
+	z-index:1;
+}
+
+#canvas{
+	width:100%;
+	position:absolute;
+	z-index:2;
+}
+
+#snap{
+	border: solid ;
+}
+
+#camera{
+	width:60%;
+	position:relative;
+	float:left;
+}
+
+#buttons{
+	display: flex;
+	width:100%;
+}
+
+#reset{
+	display: none;
+}
+
+#save{
+	display: none;
+}
+
+#filters{
+	width: 40vw;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#filters img{
+	max-width:10vw;
+	max-height:5vh;
+}
+
+.hidden_path{
+	display:none;
+}
+
+#fleche-bas{
+	max-width:15%;
+	max-height:10%;
+}
+
+#fleche-haut{
+	max-width:15%;
+	max-height:10%;
+
+}
+
+#side{
+	display: flex;
+	width: 90%;
+	margin: auto;
+}
+
+#canva_filters{
+	width:100%;
+	position:absolute;
+	z-index:3;
+}
+
+#move{
+	width: 50vw;
+	justify-content: space-around;
+	margin: auto;
+	display: none;
+}

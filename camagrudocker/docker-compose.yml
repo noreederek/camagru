@@ -1,0 +1,29 @@
+version: '3.3'
+
+services:
+  database:
+    image: mysql:latest
+    command:
+      - "--default-authentication-plugin=mysql_native_password"
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: mysecretpw
+      MYSQL_DATABASE: camagru
+      MYSQL_PASSWORD: mysecretpw
+    volumes:
+      - ./dump:/docker-entrypoint-initdb.d
+    ports:
+      - "9906:3306"
+  web:
+    build: .
+    container_name: php_web
+    depends_on:
+      - database
+    links:
+      - database
+    ports:
+      - "8100:80"
+    networks:
+      - default
+    stdin_open: true
+    tty: true
