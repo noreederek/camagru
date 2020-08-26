@@ -1,18 +1,38 @@
 # camagru
-Camagru - Snapchat like web-app
+Camagru - Snapchat like web-app on clear PHP (No Backend-Frameworks) - 21School Project
+Functionality: 
+* Registration-Authorization(with Mail Token)
+* Notifications on User Mail
+* Snapshots with cool filters
+* Admin Analytics and Rights
+* Adaptive Mobile Version
+* Likes, Comments, Sharing on Social Media
+* Catching GeoPosition when Creating New Post
+
+![camagruvid720.gif](https://github.com/noreederek/camagru/blob/master/camagruvid720.gif)
 
 # Install
 
-Before Run should be installed mySQL and PHP mysql PDO Driver
+Before setup on your system should be installed mySQL and PHP-mysql-PDO Driver
 
-// php setup.php
+* setup
 
-// php -S localhost:8000
+```
+php setup.php
+```
+* run
+
+```
+php -S localhost:8000
+```
 
 # Docker-compose
 
-In camagrudocker folder we have a Docker-compose config (but mailing functions not working without setups sendmail SMTP confs
+In camagrudocker folder we have a Docker-compose config (but mailing functions not working without sendmail SMTP confs (in Dockerfile))
 
 * Go to camagrudocker
 
-// docker-compose up
+```
+docker-compose up
+```
+Credentials to login if you don't have SMTP settings - admin@admin.ru:admin
